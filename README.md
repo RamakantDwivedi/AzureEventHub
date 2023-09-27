@@ -10,7 +10,7 @@ In order to make SummaryGenerator Resilient, We need to implement following:
   * Add try/catch block in Azure Funtion
   * Implement Logging 
 
-# Retries:
+# Retries Mechanism:
   * Set Max Retry Count:
   * Retry strategy : Exponential back off strategy(Preferred) vs. Fixed delay offers more flexibility for retry delay intervals and is commonly used when integrating with REST endpoints, and other Azure services. [Code Snippet](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-event-hubs?tabs=in-process%2Cextensionv5&pivots=programming-language-csharp#host-json)
     
@@ -22,5 +22,5 @@ In order to make SummaryGenerator Resilient, We need to implement following:
                 "maximumRetries" : 3
             }
    
-  * Implement Logging 
+  
 
