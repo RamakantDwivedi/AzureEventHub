@@ -8,6 +8,10 @@ In order to make SummaryGenerator Resilient, We need to implement following:
 # Error handling:
   * Use Application Insights : Enable and use Application Insights to log errors and monitor the health of azure function.
   * Add try/catch block in Azure Funtion
+  * Implement Logging 
 
-
+# Error handling:
+  * Use Application Insights : Enable and use Application Insights to log errors and monitor the health of azure function.
+  * Add try/catch block in Azure Funtion
+  * Implement Logging 
 
