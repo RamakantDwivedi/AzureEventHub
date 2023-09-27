@@ -22,5 +22,13 @@ In order to make SummaryGenerator Resilient, We need to implement following:
                 "maximumRetries" : 3
             }
    
-  
+  # Idempotency(Handling duplicate events):
+  To implement this we can follow below steps:
+  * Azure Function to Read event from event hub
+  * Azure Function will extract unique Call Id from event
+  * Azure Function will Check if unique Call Id is already present in Azure table storage table
+  * If Call ID is not present in Azure table storage table Azure Function will process event and save unique Call Id with event process status (processing completed) in to Azure table storage
+  * If Call ID is present, Azure Function will not process the event and move to process next event.
+
+    
 
