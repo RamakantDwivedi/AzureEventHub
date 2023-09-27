@@ -31,9 +31,12 @@ In order to make SummaryGenerator Resilient, We need to implement following:
   * If Call ID is present, Azure Function will not process the event and move to process next event.
 
 # Strategies for corrupt data
-In case if event contains corrupt data, we can avoid it if producer/consumer use same schema.
+1. In case if event contains corrupt data, we can avoid it if producer/consumer uses same schema.
+Azure Schema Registry is a feature of Event Hubs, which provides a central repository for schemas for event-driven and messaging-centric applications. It provides the flexibility for your producer and consumer applications to exchange data without having to manage and share the schema.
 
 ![image](https://github.com/RamakantDwivedi/AzureEventHub/assets/68191772/81b97c11-3d1a-4cf6-95f8-c44017f60057)
+
+2. Alternate approach is to publish the event with corrupt to a different event hub so that the existing flow is not interrupted.
 
     
 
