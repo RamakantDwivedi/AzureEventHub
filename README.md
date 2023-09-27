@@ -30,5 +30,7 @@ In order to make SummaryGenerator Resilient, We need to implement following:
   * If Call ID is not present in Azure table storage table Azure Function will process event and save unique Call Id with event process status (processing completed) in to Azure table storage
   * If Call ID is present, Azure Function will not process the event and move to process next event.
 
+    # Strategies for Event corrupt data
+
     
 
