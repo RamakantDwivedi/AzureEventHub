@@ -36,7 +36,7 @@ Azure Schema Registry is a feature of Event Hubs, which provides a central repos
 
 ![image](https://github.com/RamakantDwivedi/AzureEventHub/assets/68191772/81b97c11-3d1a-4cf6-95f8-c44017f60057)
 
-2. Alternate approach is to publish the event with corrupt to a different event hub so that the existing flow is not interrupted.
+2. Alternate approach is to publish the event (with corrupt data) to a different event hub so that the existing flow is not interrupted and can be processed by other azure function after a fix.
 
     
 
