@@ -32,6 +32,7 @@ In order to make SummaryGenerator Resilient, We need to implement following:
 
 # Strategies for corrupt data
 In case if event contains corrupt data, we can avoid it if producer/consumer use same schema.
+
 ![image](https://github.com/RamakantDwivedi/AzureEventHub/assets/68191772/81b97c11-3d1a-4cf6-95f8-c44017f60057)
 
     
