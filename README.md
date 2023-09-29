@@ -1,5 +1,10 @@
 # Azure Event Hub with Azure Funtions - Resiliency Best Practices
 
+
+## [Resiliency checklist for Event Hub](https://learn.microsoft.com/en-us/azure/architecture/checklist/resiliency-per-service)
+
+1. 
+
 In order to make SummaryGenerator Resilient, We need to implement following :
 1. Error Handling in Azure Function
 2. Retry Mechanism in Azure Function
