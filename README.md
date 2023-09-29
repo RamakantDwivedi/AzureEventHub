@@ -61,8 +61,7 @@ In our case - we can store combination of Partition Id and Id in Redis cache aft
         4. Generate Summary [LLM API Call]
 
         5. Generate the event and insert in another event hub
-
- 
+        6. save checkpoint
 
     Instead of Azure function retry policy, We will implement custom / configured retry logic for last couple of steps i.e. Generate Summary / Generate Event.
 
